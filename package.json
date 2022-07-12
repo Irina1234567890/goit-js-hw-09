@@ -5,7 +5,7 @@
   "homepage": "https://Irina1234567890.github.io/goit-js-hw-09",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "https://github.com/Irina1234567890/goit-js-hw-09"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-09/"
   },
   "repository": {
     "type": "git",

@@ -27,8 +27,8 @@ function onFormSubmit(evt) {
       })
     delay += step;
   }
-  if(amount < 0){
-    return Message('wrong number');
+  if(createPromise < 0){
+    return Message('wrong number')
   }
 }
 

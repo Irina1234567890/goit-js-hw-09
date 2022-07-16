@@ -13,6 +13,8 @@ forms.form.addEventListener('submit', onFormSubmit);
 function onFormSubmit(evt) {
   evt.preventDefault();
 
+
+  mistakeInput();
   let delay = parseInt(forms.inputDelay.value);
   const step = parseInt(forms.inputStep.value);
   const amount = parseInt(forms.inputAmount.value);

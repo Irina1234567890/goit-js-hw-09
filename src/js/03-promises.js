@@ -45,8 +45,6 @@ function createPromise(position, delay) {
         reject({position, delay})
       }
     }, delay)
-    if (step < 0) {
-      return 'wrong'
-    }
+    
   })
 }

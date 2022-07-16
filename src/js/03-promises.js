@@ -24,11 +24,12 @@ function onFormSubmit(evt) {
       })
       .catch(({ position, delay }) => {
         Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
+        if (step < 0) {
+          return 'wrong'
+        }
       })
     delay += step;
-    if (step < 0) {
-      return 'wrong'
-    }
+    
   }
   
   

@@ -30,7 +30,7 @@ function onFormSubmit(evt) {
     
   }
   
-  mistakeInput();
+
 }
 
 function createPromise(position, delay) {

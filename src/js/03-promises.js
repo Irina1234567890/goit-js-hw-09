@@ -26,7 +26,7 @@ function onFormSubmit(evt) {
         Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
       })
     delay += step;
-    if (amount < 0) {
+    if (delay < 0) {
       return 'wrong'
     }
   }

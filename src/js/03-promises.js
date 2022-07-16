@@ -28,7 +28,9 @@ function onFormSubmit(evt) {
     delay += step;
   }
 
-  
+  if(amount < 0){
+    return 'wrong number';
+  }
 
 }
 

@@ -48,3 +48,9 @@ function createPromise(position, delay) {
 
   })
 }
+
+function mistakeInput (evt) {
+  if (evt < 0) {
+    return 'wrong'
+  }
+}

@@ -29,9 +29,8 @@ function onFormSubmit(evt) {
   }
 
   if(amount < 0){
-    return 'wrong number';
+    return Message('wrong number');
   }
-
 }
 
 function createPromise(position, delay) {

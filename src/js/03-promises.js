@@ -27,6 +27,11 @@ function onFormSubmit(evt) {
       })
     delay += step;
   }
+
+  if (delay < 0) {
+    return `не валидно`
+  }
+
 }
 
 function createPromise(position, delay) {

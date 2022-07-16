@@ -13,8 +13,6 @@ forms.form.addEventListener('submit', onFormSubmit);
 function onFormSubmit(evt) {
   evt.preventDefault();
 
-
-  mistakeInput();
   let delay = parseInt(forms.inputDelay.value);
   const step = parseInt(forms.inputStep.value);
   const amount = parseInt(forms.inputAmount.value);
@@ -32,7 +30,7 @@ function onFormSubmit(evt) {
     
   }
   
-  
+  mistakeInput();
 }
 
 function createPromise(position, delay) {
@@ -53,6 +51,6 @@ function createPromise(position, delay) {
 
 function mistakeInput (evt) {
   if (evt < 0) {
-    return 'wrong'
+    return Message('wrong');
   }
 }

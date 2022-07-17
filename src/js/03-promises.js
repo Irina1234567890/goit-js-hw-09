@@ -11,6 +11,11 @@ const forms = {
 forms.form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(evt) {
+  if(evt < 0) {
+    return (`Wrong`);
+  }
+
+
   evt.preventDefault();
 
   let delay = parseInt(forms.inputDelay.value);

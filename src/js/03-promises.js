@@ -11,9 +11,6 @@ const forms = {
 forms.form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(evt) {
- 
-
-
   evt.preventDefault();
 
   let delay = parseInt(forms.inputDelay.value);
@@ -52,3 +49,8 @@ function createPromise(position, delay) {
   })
 }
 
+function mistakeInput (evt) {
+  if (evt < 0) {
+    return Message('wrong');
+  }
+}

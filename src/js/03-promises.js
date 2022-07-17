@@ -11,6 +11,11 @@ const refs = {
 refs.form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(e) {
+
+  if( position < 0 ) {
+    Notiflix.Notify.warning('Memento te hominem esse');
+  }
+
   e.preventDefault();
 
   let delay = parseInt(refs.inputDelay.value);

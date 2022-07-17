@@ -11,10 +11,7 @@ const forms = {
 forms.form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(evt) {
-  if(evt < 0) {
-    Notiflix.Notify.warning('wrong');
-    return
-  };
+ 
 
 
   evt.preventDefault();

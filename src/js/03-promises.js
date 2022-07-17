@@ -12,8 +12,9 @@ forms.form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(evt) {
   if(evt < 0) {
-    return (`Wrong`);
-  }
+    Notiflix.Notify.warning('wrong');
+    return
+  };
 
 
   evt.preventDefault();
@@ -54,8 +55,3 @@ function createPromise(position, delay) {
   })
 }
 
-function mistakeInput (evt) {
-  if (evt < 0) {
-    return Message('wrong');
-  }
-}

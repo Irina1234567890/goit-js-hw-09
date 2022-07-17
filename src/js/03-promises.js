@@ -27,10 +27,7 @@ function onFormSubmit(evt) {
         
       })
     delay += step;
-    
   }
-  
-
 }
 
 function createPromise(position, delay) {
@@ -49,8 +46,3 @@ function createPromise(position, delay) {
   })
 }
 
-function mistakeInput (evt) {
-  if (evt < 0) {
-    return Message('wrong');
-  }
-}

@@ -12,8 +12,9 @@ refs.form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(e) {
 
-  if( position < 0 ) {
-    Notiflix.Notify.warning('Memento te hominem esse');
+
+  if( e < 0 ) {
+    return Notiflix.Notify.warning('Memento te hominem esse');
   }
 
   e.preventDefault();

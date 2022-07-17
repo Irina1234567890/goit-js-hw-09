@@ -12,10 +12,12 @@ refs.form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(e) {
 
-
-  if( e < 0 ) {
-    return Notiflix.Notify.warning('Memento te hominem esse');
-  }
+  
+  if(!e.value) {
+    alert ("Значение  не должно быть ниже нуля!!");
+     } else {
+      return;
+     }
 
   e.preventDefault();
 
